@@ -34,7 +34,7 @@ def find_missing_num_approach_1(nums: List[int]):
 
 
 # Average case time complexity O(1)
-# Worst case time complexity O(n**n)
+# Worst case time complexity O(n)
 # Its using Linear search to search in arrary, so there is potential to optimize by changing search strategy
 def find_missing_num_approach_2(nums: List[int]):
     sorted_nums = set(nums)
