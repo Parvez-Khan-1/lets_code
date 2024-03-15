@@ -9,12 +9,14 @@ def binary_search(arr, target):
         if arr[mid] == target:
             return arr[mid], mid
         elif target < arr[mid]:
-            right = mid
+            right = mid - 1
         else:
-            left = mid
+            left = mid + 1
+    return False
 
 
-arr = [2, 3, 1, 4, 7, 5]
-target = 2
-result = binary_search(arr, target)
-print(result)
+if __name__ == '__main__':
+    arr = [2, 3, 1, 4, 7, 5]
+    target = 10
+    result = binary_search(arr, target)
+    print(result)
